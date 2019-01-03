@@ -1,7 +1,6 @@
 import React,{ Component, Fragment } from 'react';
-import SearchButton from './buttons/SearchButton';
-import InputSearch from './inputs/InputSearch';
-import AutofillPopup from './popups/AutofillPopup';
+import { SearchButton } from './Buttons';
+import { SearchInput } from './Inputs';
 
 class Main extends Component {
 
@@ -9,6 +8,17 @@ class Main extends Component {
     showAutofill: false,
     showPopup: false,
     showInput: false,
+    listIndex: '',
+    listValue: [{ id:1, value:'Partial Match' },
+                { id:2, value:'Autofill Match' },
+                { id:3, value:'Other Match' }]
+  }
+
+  handleListHoverIn = (e) => {
+    this.setState({ 
+      showPopup: true,
+      listIndex: e.target.id,
+     })
   }
 
   handleProceed = (e) => {
@@ -16,22 +26,21 @@ class Main extends Component {
   }
 
   render(){
-    const { showAutofill, showPopup, showInput } = this.state;
+    const { showAutofill, showPopup, showInput, listValue, listIndex } = this.state;
     return(
       <Fragment>
         <SearchButton handleButtonClick={(e) => this.setState({ showInput: !showInput })}/>
         
         { showInput && 
-            <InputSearch 
+            <SearchInput
+              listValue={listValue}
+              listIndex={listIndex} 
               showAutofill={showAutofill}
+              showPopup={showPopup}
               handleInputChange={(e) => this.setState({ showAutofill: true })} 
-              handleListHoverIn={(e) => this.setState({ showPopup: true })}
-            /> }
-        
-        { showPopup && 
-            <AutofillPopup
+              handleListHoverIn={this.handleListHoverIn}
               onCancel={(e) => this.setState({ showPopup: false })}
-              onProceed={this.handleProceed} 
+              onProceed={this.handleProceed}
             /> }
       </Fragment>
     );
