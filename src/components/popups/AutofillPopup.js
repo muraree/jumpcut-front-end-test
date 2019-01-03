@@ -9,8 +9,8 @@ const AutofillPopup = (props) => (
       Hello!
     </div>
     <div>
-      <span>Cancel</span>
-      <span>Proceed</span>
+      <span onClick={props.onCancel}>Cancel</span>
+      <span onClick={props.onProceed}>Proceed</span>
     </div>
   </div>
 );
