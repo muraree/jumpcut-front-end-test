@@ -18,6 +18,7 @@ const SearchInput = (props) => (
                 <li id={id} className="list-group-item" onMouseOver={props.handleListHoverIn}>{value}</li>
                 { ( parseInt(props.listIndex) === id && props.showPopup ) && 
                   <AutofillPopup
+                    proceed={props.showProceeding}
                     listIndex={props.listIndex}
                     heading={value.toUpperCase()}
                     onCancel={props.onCancel}

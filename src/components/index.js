@@ -8,6 +8,7 @@ class Main extends Component {
     showAutofill: false,
     showPopup: false,
     showInput: false,
+    showProceeding: false,
     listIndex: '',
     listValue: [{ id:1, value:'Partial Match' },
                 { id:2, value:'Autofill Match' },
@@ -21,12 +22,24 @@ class Main extends Component {
      })
   }
 
-  handleProceed = (e) => {
+  setProceedTask = () => {
+    this.setState({
+      showAutofill: false,
+      showPopup: false,
+      showInput: false,
+      showProceeding: false,
+    });
+  }
 
+  handleProceed = (e) => {
+    this.setState({
+      showProceeding: true
+    })
+    setTimeout(this.setProceedTask, 1000);
   }
 
   render(){
-    const { showAutofill, showPopup, showInput, listValue, listIndex } = this.state;
+    const { showAutofill, showPopup, showInput, listValue, listIndex, showProceeding } = this.state;
     return(
       <Fragment>
         <SearchButton handleButtonClick={(e) => this.setState({ showInput: !showInput })}/>
@@ -37,6 +50,7 @@ class Main extends Component {
               listIndex={listIndex} 
               showAutofill={showAutofill}
               showPopup={showPopup}
+              showProceeding={showProceeding}
               handleInputChange={(e) => this.setState({ showAutofill: true })} 
               handleListHoverIn={this.handleListHoverIn}
               onCancel={(e) => this.setState({ showPopup: false })}

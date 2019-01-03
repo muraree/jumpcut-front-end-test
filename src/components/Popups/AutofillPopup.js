@@ -6,7 +6,7 @@ const AutofillPopup = (props) => (
       <h6>{props.heading}</h6>
     </div>
     <div className="center-hover text-center pt-5 pb-5">
-      <h6>Hello!</h6>
+      <h6>{ props.proceed ? 'Proceeding...' : 'Hello!' }</h6>
     </div>
     <div className="row footer-border">
       <div className="col-md-6 border-right">
