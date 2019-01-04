@@ -1,0 +1,10 @@
+# Few improvements that are made accoriding to the references given are ::
+
+1. Worked on header text part and only changed the font by taking the reference from jumpcut home page.
+2. Worked on success stories list and changed the styling and added some effects to the Cards.
+3. Worked on success stories image hover effects.
+4. Worked on success stories Masking Images effects.
+5. Worked on card list effects hover and on scroll fadein.
+6. Worked on testimonial slider redesign and effect.
+
+# I have tried to make the effects as smooth as possible from my side.

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+ body {
+     background: #fff;
+     width: 100%;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     background: #f1f2fa;
+}
+ *::after, *::before {
+     content: '';
+}
+ a:hover {
+     text-decoration: none;
+}
+ a, button {
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     transition: all 0.5s ease;
+}
+ .btn.focus, .btn:focus {
+     outline: 0;
+     box-shadow: inherit;
+}
+ a:hover, a:focus, {
+     outline: none;
+     text-decoration: none;
+}
+ button:hover, button:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus, :focus {
+     outline: none;
+}
+ ul {
+     padding: 0;
+     margin: 0;
+     list-style: none;
+}
+ img {
+     max-width: 100%;
+}
+/* Global Css End */
+ .main-jumpcut {
+     background: url(../images/bg.jpg);
+     height: 600px;
+     transition: all 1s ease;
+     margin-bottom: 25px;
+     position: relative;
+}
+ .bg2 {
+     background: url(../images/bg2.jpg);
+}
+ .main-jumpcut p {
+     color: #fff;
+     font-size: 14px;
+     font-weight: 500;
+     letter-spacing: 1.9px;
+     text-transform: uppercase;
+}
+ .main-jumpcut a {
+     color: #fff;
+     font-style: italic;
+     letter-spacing: 2.8px;
+     line-height: .95;
+     font-size: 48px;
+     font-weight: 700;
+}
+ .social-text h4 {
+     font-size: 15px;
+     font-weight: 500;
+     letter-spacing: 1.7px;
+     color: rgba(255,255,255,.4);
+     margin-bottom: 3px;
+}
+ .social-text h5 {
+     color: #fff;
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 1.9px;
+     text-transform: uppercase;
+}
+ .home-story-social ul li {
+     display: inline-block;
+     padding: 0 40px;
+}
+ .home-story-social ul li img {
+     width: 32px;
+     margin-right: 5px;
+}
+ .home-story-social ul li a {
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1.3px;
+     text-transform: uppercase;
+}
+ .jumpcut {
+     padding: 30px 0px;
+     background: #30353d;
+}
+ .student {
+     padding: 100px 0px;
+     background: url(../images/background3.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ .student-heading h2 {
+     font-size: 50px;
+     font-style: italic;
+     letter-spacing: 2.2px;
+     color: #2d323c;
+     margin-bottom: 15px;
+     font-weight: 700;
+}
+ .student-heading p {
+     font-size: 20px;
+     font-weight: 300;
+     color: #666778;
+}
+ .main-student h3 {
+     color: #fff;
+     font-size: 28px;
+     font-weight: 500;
+     letter-spacing: 1.8px;
+}
+ .main-student p {
+     line-height: 1.55;
+     max-width: 280px;
+     margin: 0 auto;
+     font-size: 18px;
+     color: #fff;
+     font-style: italic;
+     font-weight: 300;
+     height: 70px;
+}
+ .main-student {
+     background-color: #151024;
+     background: url(../images/va-bg.jpg);
+     height: 488px;
+     text-align: center;
+     color: #fff;
+     border-radius: 10px;
+     transition: all .8s;
+     margin-bottom: 15px;
+}
+ .student-btn ul li {
+     display: inline-block;
+     line-height: 46px;
+     border: 1px solid #fff;
+     background: #fff;
+     color: #A61D55;
+     transition: all .2s;
+     transition-timing-function: ease-in;
+     text-transform: uppercase;
+     font-weight: 700;
+     letter-spacing: 1.8px;
+     border-radius: 5px;
+     min-width: 130px;
+     margin: 5px 10px;
+}
+ .main-jumpcut-inner {
+     position: absolute;
+     bottom: 40px;
+     padding: 70px 30px 0px;
+     z-index: 9;
+}
+ .main-jumpcut:after {
+     -webkit-mask-image: linear-gradient(to bottom, transparent 40%, #212429 85%);
+     mask-image: linear-gradient(to bottom, transparent 40%, black 85%);
+     position: absolute;
+     content: "";
+     width: 101%;
+     left: -1px;
+     right: 0;
+     top: 0;
+     bottom: -1px;
+     background: #212429;
+}
+ .main-jumpcut:hover {
+     box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+     -webkit-transform: scale(1.03) translateX(-3px) translateY(-3px);
+     transform: scale(1.03) translateX(-3px) translateY(-3px);
+}
+ .main-student:hover {
+     box-shadow: 5px 5px 20px rgba(0,0,0,.4);
+     -webkit-transform: scale(1.03) translateX(-3px) translateY(-3px);
+     transform: scale(1.03) translateX(-3px) translateY(-3px);
+}
+ .join-our-student h1 {
+     color: #A61D55;
+     font-size: 24px;
+     font-weight: 500;
+     text-transform: lowercase;
+     margin-bottom: 7px;
+}
+ .owl-nav {
+     position: relative;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+}
+ .testimonial-slider .owl-nav button.owl-prev, .testimonial-slider .owl-nav button.owl-next {
+     width: 70px;
+     height: 70px;
+     box-shadow: 0 10px 40px rgba(0,0,0,0.16);
+     font-size: 32px;
+     background: #fff;
+     border-radius: 50px;
+     color: #A61D55;
+     margin-left: 0px;
+}
+ .owl-prev {
+     float: left;
+     position: absolute;
+     left: -100px;
+     bottom: 100px;
+}
+ .owl-next {
+     float: right;
+     position: absolute;
+     right: -100px;
+     bottom: 100px;
+}
+ .join-our-student p {
+     margin: 0;
+     font-size: 16px;
+     font-weight: 400;
+     color: #666778;
+     line-height: 27px;
+}
+ .join-our-student h6 {
+     color: #2d323c;
+     font-weight: 500;
+}
+ .join-our-student {
+     padding: 29px;
+     background: #fff;
+     height: 300px;
+     border: 1px solid #eee;
+     transition: all .8s;
+}
+ .join-our-student:hover {
+     -webkit-transform: scale(1.03) translateX(-3px) translateY(-3px);
+     transform: scale(1.03) translateX(-3px) translateY(-3px);
+}
+ .join-our-student img {
+     width: auto !important;
+     position: absolute;
+     right: 35px;
+     top: 35px;
+}
+ .jumpcut h2 {
+     font-style: italic;
+     line-height: 1.06;
+     letter-spacing: 1.9px;
+     color: #fff;
+     font-size: 72px;
+}
+ .jumpcut p {
+     font-size: 20px;
+     font-weight: 500;
+     font-style: italic;
+     color: #fff;
+     letter-spacing: 1.8px;
+}
+ 
